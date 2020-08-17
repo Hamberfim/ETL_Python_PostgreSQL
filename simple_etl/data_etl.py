@@ -23,7 +23,7 @@ with open('Customer_Transactions_sm.csv') as csv_file:
             continue
         print("Transaction ID: " + str(row[0])
               + ", Customer ID: " + str(row[1])
-              + ", Purchase Amount: " + str(row[2])
+              + ", Purchase Amount: $" + str(row[2])
               + ", Date of Purchase: " + str(row[3]))
         record_count += 1
-print("Record #: " + str(record_count))
+print("# of Records: " + str(record_count))
