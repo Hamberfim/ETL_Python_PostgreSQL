@@ -2,7 +2,7 @@
 """
 Created on 8/20/2020
 @author: Anthony Hamlin
-Program: etl_cust_trans_xls.py
+Program: etl_SampleSuperstore_xls.py
 This program is a simple ETL -- extract, transform and load.
 """
 import xlrd
