@@ -8,7 +8,7 @@ This program is a simple ETL -- extract, transform and load.
 import os
 import pandas as pd
 # print(os.getcwd())
-# used so I can see the dataset/dataframe in the IPython console variable viewer
+# used so test and see the dataset/dataframe in the IPython console variable viewer
 # dir_path = os.getcwd()
 # dataset = pd.read_csv(dir_path + '\simple_etl\employees_sm.csv')
 dataset = pd.read_csv('employees_sm.csv')
