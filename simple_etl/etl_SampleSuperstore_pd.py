@@ -5,24 +5,12 @@ Created on 8/20/2020
 Program: etl_SampleSuperstore_pd.py
 This program is a simple ETL -- extract, transform and load.
 """
-import xlrd
 import pandas as pd
 
-# gather info on our xls doc
-book = xlrd.open_workbook('SampleSuperstore.xls')
-# how many sheets are in the xls document
-print("Number of sheets in this document are {}.".format(book.nsheets))
-# Name of the sheets
-print("The name of each sheet in this document are {}.".format(book.sheet_names()))
-# hold sheet names
-our_sheet_names = book.sheet_names()
-for name in our_sheet_names:
-    print("Sheet Name: " + name)
-
 # read in each sheets data from the xls doc
-orders_sheet1 = pd.read_excel('SampleSuperstore.xls', sheet_name='Orders')
-returns_sheet2 = pd.read_excel('SampleSuperstore.xls', sheet_name='Returns')
-people_sheet3 = pd.read_excel('SampleSuperstore.xls', sheet_name='People')
+orders_sheet1 = pd.read_excel('datasets/SampleSuperstore.xls', sheet_name='Orders')
+returns_sheet2 = pd.read_excel('datasets/SampleSuperstore.xls', sheet_name='Returns')
+people_sheet3 = pd.read_excel('datasets/SampleSuperstore.xls', sheet_name='People')
 
 # ===== PEOPLE SHEET =====
 # list the columns of a sheet
@@ -53,7 +41,7 @@ df_returns = returns_sheet2.head(10)  # return first number of rows
 print(df_returns)
 print()  # space in output
 
-# ===== OREDERS SHEET =====
+# ===== ORDERS SHEET =====
 orders_col = list(orders_sheet1)
 print("Orders Sheet Column Titles: " + str(orders_col))
 

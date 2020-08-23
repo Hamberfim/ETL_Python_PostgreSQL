@@ -5,13 +5,13 @@ Created on 8/20/2020
 Program: etl_employees_csv.py
 This program is a simple ETL -- extract, transform and load.
 """
-import os
+# import os
 import pandas as pd
 # print(os.getcwd())
 # used so test and see the dataset/dataframe in the IPython console variable viewer
 # dir_path = os.getcwd()
 # dataset = pd.read_csv(dir_path + '\simple_etl\employees_sm.csv')
-dataset = pd.read_csv('employees_sm.csv')
+dataset = pd.read_csv('datasets/employees_sm.csv')
 
 # rename some columns
 dataset.rename(columns={"Bonus %": "Bonus", "First Name": "F_Name"}, inplace=True)

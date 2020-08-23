@@ -6,7 +6,7 @@ Program: etl_SampleSuperstore_xlrd.py
 This program is a simple ETL -- extract, transform and load.
 """
 import xlrd
-book = xlrd.open_workbook('SampleSuperstore.xls')
+book = xlrd.open_workbook('datasets/SampleSuperstore.xls')
 
 # how many sheets are in the xls document
 print("Number of sheets in this document are {}.".format(book.nsheets))

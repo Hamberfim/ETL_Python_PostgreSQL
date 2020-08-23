@@ -12,7 +12,7 @@ import csv
 import sys
 from sqlalchemy import *
 
-with open('Customer_Transactions_sm.csv') as csv_file:
+with open('datasets/Customer_Transactions_sm.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     record_count = 1
